@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>じゃんけんゲーム</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .game-container {
+      text-align: center;
+    }
+
+    .choices button {
+      font-size: 16px;
+      margin: 10px;
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+
+    .result {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="game-container">
+    <h1>じゃんけんゲーム</h1>
+    <div class="choices">
+      <button onclick="chooseHand('グー')">グー</button>
+      <button onclick="chooseHand('パー')">パー</button>
+      <button onclick="chooseHand('チョキ')">チョキ</button>
+    </div>
+    <div class="result" id="result"></div>
+  </div>
+  <script>
+    // 問題: 簡単なじゃんけんゲームを作成しましょう。
+    // 以下の HTML と JavaScript コードを用いて、じゃんけんゲームを作成してください。ゲームの流れは以下の通りです。
+
+    // 処理内容
+    // ユーザーがグー、チョキ、またはパーのボタンを選択します。
+    // ユーザーの選択に対して、コンピュータがランダムにグー、チョキ、またはパーを選択します。
+    // ユーザーとコンピュータの選択結果を表示し、勝者を判定します。
+    // この条件を元にじゃんけんゲームを完成させてください。
+
+    // ユーザーが選んだ選択肢を引数userChoiceとする。
+    // 関数playで作ったコンピュータがランダムに選択したグー、チョキ、またはパーを作成する。
+    // それらをdetermineWinner関数に引数として渡し、変数resultに格納する。
+    // そのresultをp要素の内容に挿入する。
+    function play(userChoice) {
+    }
+
+    // 関数playで作ったコンピュータがランダムに選択したグー、チョキ、またはパーを比較し、テキストをreturnする。
+    function determineWinner(userChoice, computerChoice) {
+    }
+
+  </script>
+</body>
+</html>
